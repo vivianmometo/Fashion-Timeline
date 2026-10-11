@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Timeline</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Fashion Timeline</h1>
+      <p>Explore the evolution of fashion across decades.</p>
+      <div class="carousel">
+        <img src="images/1800s.jpg" alt="1920s Fashion" style="display: block;">
+        <img src="images/1900s.jpg" alt="1960s Fashion" style="display: none;">
+        <img src="images/1920s.jpg" alt="1960s Fashion" style="display: none;">
+        <img src="images/1960s.jpg" alt="1960s Fashion" style="display: none;">
+        <img src="images/1980s.jpg" alt="1980s Fashion" style="display: none;">
+        <img src="images/2000s.jpg" alt="2000s Fashion" style="display: none;">
+      </div>
+    </section>
+
+    <h2>Fashion Through the Decades</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Decade</th>
+          <th>Iconic Trend</th>
+          <th>Key Designers</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1800s</td>
+          <td>Victorian Era</td>
+          <td>Charles Frederick Worth</td>
+          <td><img src="images/1800s.jpg" alt="1920s Fashion" width="100"></td>
+        </tr>
+        <tr>
+          <td>1900s</td>
+          <td>Edwardian Era</td>
+          <td>Jeanne Paquin</td>
+          <td><img src="images/1900s.jpg" alt="1920s Fashion" width="100"></td>
+        </tr>
+        <tr>
+          <td>1920s</td>
+          <td>Flapper Dresses</td>
+          <td>Coco Chanel</td>
+          <td><img src="images/1920s.jpg" alt="1920s Fashion" width="100"></td>
+        </tr>
+        <tr>
+          <td>1960s</td>
+          <td>Mod Styles</td>
+          <td>Mary Quant</td>
+          <td><img src="images/1960s.jpg" alt="1960s Fashion" width="100"></td>
+        </tr>
+        <tr>
+          <td>1980s</td>
+          <td>Punk Fashion</td>
+          <td>Vivienne Westwood</td>
+          <td><img src="images/1980s.jpg" alt="1960s Fashion" width="100"></td>
+        </tr>
+        <tr>
+          <td>2000s</td>
+          <td>Y2K Fashion</td>
+          <td>Alexander McQueen</td>
+          <td><img src="images/2000s.jpg" alt="2000s Fashion" width="100"></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <section class="designer-info">
+         <h1>Key Designers</h1>
+        <div class="designer-container">
+          <div class="designer-block">
+            <h2>Charles Frederick Worth</h2>
+            <p>Considered the first fashion designer, Worth established the House of Worth in Paris in the mid-1800s. He is known for his lavish haute couture gowns.</p>
+          </div>
+          <div class="designer-block">
+            <h3>Jeanne Paquin</h3>
+            <p>One of the first female couturiers, Jeanne Paquin was renowned for her elegant designs and was the first woman to open a fashion house in Paris.</p>
+          </div>
+          <div class="designer-block">
+            <h2>Coco Chanel</h2>
+            <p>Coco Chanel revolutionized women's fashion by introducing more comfortable yet stylish clothing, including the iconic little black dress.</p>
+          </div>
+          <div class="designer-block">
+            <h2>Mary Quant</h2>
+            <p>Mary Quant was a British fashion designer credited with popularizing the miniskirt in the 1960s, an iconic symbol of the youth culture movement.</p>
+          </div>
+          <div class="designer-block">
+            <h2>Vivienne Westwood</h2>
+            <p>Known for her role in the punk movement, Vivienne Westwood's designs challenge conventional fashion norms, mixing modern styles with historical references.</p>
+          </div>
+          <div class="designer-block">
+            <h2>Alexander McQueen</h2>
+            <p>Known for his dramatic and bold designs, McQueen’s collections often combine dark, romantic, and avant-garde elements to challenge traditional fashion aesthetics.</p>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="fashiontimeline@hotmail.com">fashiontimeline@hotmail.com</a></p>
+          <p>Phone: <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a></p>
+          <p>Location: 123 Fashion St, Istanbul, Turkiye</p>
+          <p>&copy; 2025 Fashion Timeline. All Rights Reserved.</p>
+        </div>
+      </div>
+  </footer>
+
+  
+  <script>
+    // Simple Carousel Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.carousel img');
+      let currentIndex = 0;
+
+      setInterval(() => {
+        // Hide the current image
+        images[currentIndex].style.display = 'none';
+
+        // Move to the next image
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Show the next image
+        images[currentIndex].style.display = 'block';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
