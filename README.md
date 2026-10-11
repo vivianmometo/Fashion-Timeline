@@ -1,10 +1,10 @@
-# 👗 Fashion Timeline — Interactive Web Experience
+# Fashion Timeline — Interactive Web Experience
 
 A multi-page responsive web project celebrating the evolution of fashion, iconic designers, and historical trends from the Victorian era to Y2K.
 
 ---
 
-## ✨ Features & Highlights
+## Features & Highlights
 
 - **Multi-Page Architecture:** Semantic structure across Home (`index.html`), Timeline (`timeline.html`), Trends (`trends.html`), and Contact (`contact.html`).
 - **Interactive UI Components:**
@@ -16,7 +16,7 @@ A multi-page responsive web project celebrating the evolution of fashion, iconic
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - **HTML5:** Semantic markup, video embeds, tabular data, and accessible content structure.
 - **CSS3:** Custom styling, responsive layouts, grid systems, and typography.
@@ -24,7 +24,7 @@ A multi-page responsive web project celebrating the evolution of fashion, iconic
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── index.html        # Main landing page & runway showcases
